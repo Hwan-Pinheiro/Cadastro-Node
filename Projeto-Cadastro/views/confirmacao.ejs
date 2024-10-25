@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Envio</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Envio Concluído</h1>
+        <nav>
+            <a href="/">Início</a>
+            <a href="/servicos">Serviços</a>
+            <a href="/sobre">Sobre Nós</a>
+        </nav>
+    </header>
+    <main>
+        <section class="confirmation">
+            <h2>Obrigado por Entrar em Contato, <%= nome %>!</h2>
+            <p>Recebemos sua mensagem com os seguintes dados:</p>
+            <ul>
+                <li><strong>Nome:</strong> <%= nome %></li>
+                <li><strong>Email:</strong> <%= email %></li>
+                <li><strong>Mensagem:</strong> <%= mensagem %></li>
+            </ul>
+            <a href="/" class="btn-home">Voltar para a Página Inicial</a>
+        </section>
+    </main>
+</body>
+</html>
